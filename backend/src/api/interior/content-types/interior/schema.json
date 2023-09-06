@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interiors",
+  "info": {
+    "singularName": "interior",
+    "pluralName": "interiors",
+    "displayName": "interior",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subtitle": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "img": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "unique": true,
+      "required": true
+    },
+    "detail1": {
+      "type": "text",
+      "unique": true,
+      "required": true
+    },
+    "detail2": {
+      "type": "text",
+      "unique": true,
+      "required": true
+    },
+    "detail3": {
+      "type": "text",
+      "unique": true,
+      "required": true
+    }
+  }
+}
